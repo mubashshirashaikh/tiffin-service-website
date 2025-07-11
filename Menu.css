@@ -1,0 +1,110 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(thali.jpg); /* or 'images/thali.jpg' if it's inside folder */
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    color: whitesmoke;
+    background-color: black;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Menu Container Styling */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.menu-item {
+    background-color: black;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item h2 {
+    font-size: 1.5rem;
+    color: #ff7043;
+    margin: 0 0 0.5rem;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #ddd;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.menu-item a {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background: none;
+    color: #fff;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    align-items: end;
+}
+
+.footer p {
+    font-size: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+}
